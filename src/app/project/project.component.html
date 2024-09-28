@@ -1,1 +1,10 @@
-<p>project works!</p>
+<article>
+<header>
+    <h2>{{name}}</h2>
+    <div>{{year}}</div>
+    <div *ngIf="client">Client: {{client}}</div>
+    <div *ngIf="exhibit">Exhibition: {{exhibit}}</div>
+</header>
+<div>{{description}}</div>
+</article>
+<img class="bigimage" [src]="mainimage" [alt]="description">
