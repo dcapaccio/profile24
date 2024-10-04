@@ -1,0 +1,42 @@
+{
+  "projects": [
+    {
+        "name": "Analog Bandits",
+        "year": "2013-2018",
+        "client": "",
+        "exhibit": "",
+        "products": "Website, Album Art, Music Videos, ",
+        "technologies": ["Web design"],
+        "mainimage": "images/ab_invocation_release.png",
+        "extraAssets": [
+          { "img": "images/LP_AlbumCover_1000.png" , "link": "https://analogbandits.bandcamp.com/album/invocation"},
+          { "img": "images/ab_invocation_release.png" }
+        ],
+        "description": "I was the guitarist and front-man of the Prog/Art Rock band Analog Bandits. Through the years, we wrote, recorded, and performed two releases: Automata EP and Invocation. I managed the booking, finances, art, videos, promotional materials, and marketing. It was a labor of love that ended when our drummer left the city."
+      },
+    {
+      "name": "iSaveSpecies",
+      "year": "2011-2015",
+      "client": "iSaveSpecies Grant Participants",
+      "exhibit": "",
+      "technologies": ["Actionscript 3", "Adobe AIR", "Touchscreen Kiosks"],
+      "mainimage": "images/hoot_pick.png",
+      "extraAssets": [
+        { "img": "images/isavespecies_kiosks.jpg" },
+        { "img": "images/poster_orangutans.png" },
+        { "img": "images/poster_words.png" },
+        { "video": "videos/RoarFinal.mp4" }
+      ],
+      "description": "My former employer Project Dragonfly initiated an NSF-funded project called iSaveSpecies, a follow-on and expansion of the smaller-scoped Wild Research. This new grant expanded and improved the touchscreen conservation education kiosks from Cincinnati Zoo and Botanical Gardens to 12 different institutions in the US and Australia. ISS included 6 different applications with dynamically swapped assets for the target exhibit at each Zoo/Aquarium. The image here is of the app Hoot like a Gorilla!, which invited participants to listen and record their own versions of real gorilla calls."
+    },
+    {
+      "name": "Fetal Pig Dissection",
+      "year": "2011",
+      "client": "South University",
+      "exhibit": "",
+      "technologies": "Actionscript 3, Adobe Flash",
+      "mainimage": "images/pig.jpg",
+      "description": "Back in 2011, remote learning was just coming to promenance at Universities, and Flash was still relevant. This Flash/AS3 application was created for South University as a collaboration with Britt Carr of Advanced Authoring. South University wanted to emulate the experience of fetal pig dissection as much as possible with interactive surgical cuts and other interactive elements."
+    }
+  ]
+}

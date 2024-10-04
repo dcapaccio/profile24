@@ -3,15 +3,10 @@
   <p>Artist - Programmer - Musician</p>
 </header>
 <main class="main">
-  <app-project
-    name="Project Name"
-    year="2021"
-    client="client name, if there is one."
-    exhibit="If there's an exhibit."
-    technologies="Typescript, computer, face"
-    mainimage="images/test.jpg"
-    description="Project Description is longer text that will show the people exactly what it is this project is about. It should probably be put in a separate document and just imported so the html isn't huge."
-  ></app-project>
+  <ng-container *ngFor="let p of pfile.projects">
+    <app-project [project]="p"></app-project>
+  </ng-container>
+
   <div class="content">
     <p>a name is all you need.</p>
     <address>

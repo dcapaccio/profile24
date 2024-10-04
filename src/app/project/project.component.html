@@ -1,10 +1,19 @@
-<article>
-<header>
-    <h2>{{name}}</h2>
-    <div>{{year}}</div>
-    <div *ngIf="client">Client: {{client}}</div>
-    <div *ngIf="exhibit">Exhibition: {{exhibit}}</div>
-</header>
-<div>{{description}}</div>
+<article class="textOnTop">
+  <header>
+    <h2>{{ project.name }}</h2>
+    <div>{{ project.year }}</div>
+  </header>
+  <div class="details">
+    <div *ngIf="project.client">Client: {{ project.client }}</div>
+    <div *ngIf="project.exhibit">Exhibition: {{ project.exhibit }}</div>
+    <div>{{ project.description }}</div>
+  </div>
+  <div class="background">
+    <img class="bigimage" [src]="project.mainimage" [alt]="project.description" />
+  </div>
 </article>
-<img class="bigimage" [src]="mainimage" [alt]="description">
+<div *ngIf="project.extraAssets && showExtras">
+    <div class="video">
+        <iframe src="http://player.vimeo.com/video/26435861"></iframe>
+    </div>
+</div>

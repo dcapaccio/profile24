@@ -1,17 +1,42 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
+
+import { CommonModule } from '@angular/common';
+
+class Extra {
+  img?: string;
+  video?: string;
+  link?: string; // hyperlink
+}
+
+export class ProjectModel {
+  name: string;
+  mainimage: string;
+  description: string;
+  year: string;
+  client?: string;
+  exhibit?: string;
+  extraAssets?: Extra[];
+  products?: string[];
+  technologies?: string[];
+}
+
+export class ProjectFile {
+  projects: Array<ProjectModel>;
+}
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [],
   templateUrl: './project.component.html',
+  imports: [CommonModule],
   styleUrl: './project.component.scss',
 })
 export class ProjectComponent {
-  @Input({ required: true }) mainimage: string = 'assets/images/test.jpg';
-  @Input() description: string = 'Test description of this project.';
-  @Input() name: string = 'Project Name';
-  @Input() year: string = '2021';
-  @Input() client: string = 'client name, if there is one.';
-  @Input() exhibit: string = "If there's an exhibit.";
+
+  @Input() project: ProjectModel;
+  @Input() showExtras: boolean = false;
+
+  constructor() {}
+
+
 }
